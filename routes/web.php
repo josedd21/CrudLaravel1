@@ -1,0 +1,20 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::resource('libro', 'LibroController');
+Route::get('api/v1/libros','LibroController@getLibros');
+
+Route::resource('registro', 'RegistroController');
+Route::get('api/v1/registros','RegistroController@getRegistros');
+
+
